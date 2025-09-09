@@ -4,15 +4,15 @@ import numpy as np
 
 posteriors = np.load('posteriors.npy', allow_pickle = True).item()
 
-theta_l = posteriors['theta_l']
-phi_l = posteriors['phi_l']
-delta_l = posteriors['delta_l']
-B_fp = posteriors['B_fp']
-m = posteriors['m']
-L = posteriors['L']
-alpha = posteriors['alpha']
-dalpha = posteriors['dalpha']
-flux_0 = posteriors['flux_0']
+theta_l = posteriors['theta_l'] # Magnetic co-latitude of flaring loop center (degrees)
+phi_l = posteriors['phi_l']     # Longitude of flaring loop at t_0 (JD = 2457526.328) (degrees)
+delta_l = posteriors['delta_l'] # Loop orientation relative to the meridion (degrees)
+B_fp = posteriors['B_fp']       # Loop footpoint field strength (Gauss)
+m = posteriors['m']             # Magnetic field gradient (Gauss/stellar radii)
+L = posteriors['L']             # Loop size (stellar radii)
+alpha = posteriors['alpha']     # Emission cone opening angle (degrees)
+dalpha = posteriors['dalpha']   # Emission cone thickness (degrees)
+flux_0 = posteriors['flux_0']   # Maximum flux density (mJy)
 ```
 These can be easily plotted as follows:
 ```python
