@@ -21,4 +21,4 @@ import matplotlib.pyplot as plt
 plt.hist(alpha)
 plt.show()
 ```
-I also include a plotting script (`plot dynamic spectrum.py`) to reproduce Figure 4 from the paper.
+I also include a plotting script (`plot dynamic spectrum.py`) to reproduce Figure 4 from the paper, which shows the maximum likelihood dynamic spectrum of the flaring loop.
